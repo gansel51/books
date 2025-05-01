@@ -1,94 +1,110 @@
-/* General Body Styles */
+/* Base Styles */
 body {
-    background-color: #2b2b2b; /* Dark background */
-    color: #e0e0e0; /* Light grey text for contrast */
-    font-family: 'Garamond', serif; /* Classic serif font for a gothic look */
-    line-height: 1.6;
+    background-color: #1a1a1a;
+    background-image: url('path_to_stone_texture.jpg'); /* Dark stone wall texture */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e8e6e3;
+    font-family: 'Garamond', serif;
     margin: 0;
     padding: 0;
 }
 
-/* Dark Wood Background for the Library */
-.container {
-    background-image: url('path_to_wood_texture.jpg'); /* Add a dark wood texture image */
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-}
-
-/* Header Styles (Purple Gothic Theme) */
+/* Header */
 header {
-    background-color: #4b0082; /* Dark purple header */
-    color: #f4f4f4; /* Light text color for contrast */
-    padding: 15px 30px;
+    background-color: #3a003a;
+    color: #f8f6f2;
     text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 5px solid #3a0066; /* Dark purple border for extra contrast */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    padding: 30px 20px 10px;
+    border-bottom: 4px solid #2a002a;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
 }
 
-/* Links with a Gothic Feel */
+/* Stamp Logo */
+.logo {
+    width: 60px;
+    height: auto;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+/* Gothic Heading */
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    text-shadow: 2px 2px #000;
+}
+
+/* Container for Content */
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.85); /* Slight transparency */
+    border: 2px solid #3a003a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Links */
 a {
-    color: #d4a2ff; /* Light purple links */
+    color: #c9a0dc;
     text-decoration: none;
+    border-bottom: 1px dashed #a872c1;
 }
 
 a:hover {
-    color: #bb80c7; /* Darker purple on hover */
-    text-decoration: underline;
+    color: #f3d1ff;
+    border-bottom: 1px solid #c9a0dc;
 }
 
 /* Buttons */
 button {
-    background-color: #5f2b8c; /* Purple button */
+    background-color: #562b77;
     color: #fff;
-    border: none;
     padding: 10px 20px;
+    border: 1px solid #321747;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
     cursor: pointer;
+    font-family: 'Garamond', serif;
+    box-shadow: 0 2px 5px #000;
 }
 
 button:hover {
-    background-color: #7b4b98; /* Lighter purple on hover */
+    background-color: #7e4aa1;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: #333;
-    color: #bbb;
-    padding: 10px 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #888;
+    font-size: 0.9em;
 }
 
-/* Gothic Borders */
-.gothic-border {
-    border: 3px solid #4b0082; /* Purple gothic border */
-    padding: 10px;
-    margin: 20px 0;
-}
-
-/* Dark and Moody Elements */
+/* Decorative Blockquote */
 blockquote {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly dark background for blockquotes */
-    border-left: 4px solid #4b0082; /* Purple border to match the gothic theme */
-    padding: 10px;
-    margin: 20px 0;
     font-style: italic;
+    padding: 15px 20px;
+    margin: 30px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #6a2e91;
 }
 
-/* Custom Scrollbar for the Dark Theme */
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #4b0082;
-    border-radius: 10px;
+    background: #4b004b;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #333;
+    background: #222;
 }
