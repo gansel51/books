@@ -1,85 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Libre+Baskerville&display=swap');
-
+/* General Body Styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Libre Baskerville', serif;
-  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-  background-color: #1b1b1b;
-  color: #eae0d5;
+    background-color: #2b2b2b; /* Dark background */
+    color: #e0e0e0; /* Light grey text for contrast */
+    font-family: 'Garamond', serif; /* Classic serif font for a gothic look */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+/* Dark Wood Background for the Library */
+.container {
+    background-image: url('path_to_wood_texture.jpg'); /* Add a dark wood texture image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+/* Header Styles (Purple Gothic Theme) */
 header {
-  background-color: #2d1f24;
-  padding: 2em;
-  text-align: center;
-  border-bottom: 2px solid #4d3b3b;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+    background-color: #4b0082; /* Dark purple header */
+    color: #f4f4f4; /* Light text color for contrast */
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #3a0066; /* Dark purple border for extra contrast */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
 }
 
-header h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 3em;
-  color: #d2b48c;
-  text-shadow: 1px 1px #000;
-}
-
-nav {
-  background-color: #302124;
-  text-align: center;
-  padding: 1em;
-  border-top: 1px solid #3a2a2e;
-  border-bottom: 1px solid #3a2a2e;
-}
-
-nav a {
-  color: #e0cda9;
-  margin: 0 1.5em;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-}
-
-nav a:hover {
-  color: #f5deb3;
-  text-shadow: 0 0 5px #c19a6b;
-}
-
-main {
-  padding: 2em;
-  max-width: 800px;
-  margin: auto;
-  background-color: rgba(40, 30, 35, 0.8);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
-}
-
-main ul {
-  list-style-type: square;
-  padding: 1em 2em;
-}
-
-main ul li {
-  margin-bottom: 0.75em;
-  font-size: 1.15em;
-}
-
+/* Links with a Gothic Feel */
 a {
-  color: #c7a76c;
-  text-decoration: none;
+    color: #d4a2ff; /* Light purple links */
+    text-decoration: none;
 }
 
 a:hover {
-  color: #ffe4b5;
+    color: #bb80c7; /* Darker purple on hover */
+    text-decoration: underline;
 }
 
-.logo-container {
+/* Buttons */
+button {
+    background-color: #5f2b8c; /* Purple button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7b4b98; /* Lighter purple on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #bbb;
+    padding: 10px 20px;
     text-align: center;
-    margin-top: 1.5rem;
-  }
-  
-  .stamp-logo {
-    width: 120px;
-    height: auto;
-    opacity: 0.95;
-  }
+}
+
+/* Gothic Borders */
+.gothic-border {
+    border: 3px solid #4b0082; /* Purple gothic border */
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/* Dark and Moody Elements */
+blockquote {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly dark background for blockquotes */
+    border-left: 4px solid #4b0082; /* Purple border to match the gothic theme */
+    padding: 10px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Custom Scrollbar for the Dark Theme */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4b0082;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
