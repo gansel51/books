@@ -14,12 +14,26 @@
     <a href="library.html">Library</a>
   </nav>
   <main>
-    <ul>
-      <li>The Hobbit by J.R.R. Tolkien</li>
-      <li>1984 by George Orwell</li>
-      <li>The Great Gatsby by F. Scott Fitzgerald</li>
-      <!-- Add more books here -->
+    <ul id="book-list">
+      <li>Loading books...</li>
     </ul>
   </main>
+  <script>
+    fetch('assets/books.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('book-list');
+        list.innerHTML = '';
+        data.forEach(title => {
+          const li = document.createElement('li');
+          li.textContent = title;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => {
+        document.getElementById('book-list').innerHTML = '<li>Error loading books.</li>';
+        console.error(err);
+      });
+  </script>
 </body>
 </html>

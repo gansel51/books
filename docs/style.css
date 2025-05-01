@@ -1,66 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Libre+Baskerville&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'EB Garamond', Georgia, serif;
-  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
-  background-color: #4b2e1d; /* rich wood tone */
-  color: #fdf6e3;
+  font-family: 'Libre Baskerville', serif;
+  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  background-color: #1b1b1b;
+  color: #eae0d5;
 }
 
 header {
-  background-color: rgba(59, 29, 18, 0.9);
-  padding: 1.5em;
+  background-color: #2d1f24;
+  padding: 2em;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #4d3b3b;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: #e6d3b3;
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+  color: #d2b48c;
+  text-shadow: 1px 1px #000;
 }
 
 nav {
-  background-color: rgba(70, 35, 20, 0.95);
-  padding: 0.75em;
+  background-color: #302124;
   text-align: center;
-  border-top: 1px solid #5c3926;
-  border-bottom: 1px solid #5c3926;
+  padding: 1em;
+  border-top: 1px solid #3a2a2e;
+  border-bottom: 1px solid #3a2a2e;
 }
 
 nav a {
-  color: #f9e7d2;
+  color: #e0cda9;
   margin: 0 1.5em;
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #ffdca8;
+  color: #f5deb3;
+  text-shadow: 0 0 5px #c19a6b;
 }
 
 main {
   padding: 2em;
   max-width: 800px;
   margin: auto;
+  background-color: rgba(40, 30, 35, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
 main ul {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 1em 2em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
   list-style-type: square;
+  padding: 1em 2em;
 }
 
 main ul li {
   margin-bottom: 0.75em;
-  font-size: 1.1em;
+  font-size: 1.15em;
 }
 
 a {
-  color: #ffce89;
+  color: #c7a76c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffe4b5;
 }
