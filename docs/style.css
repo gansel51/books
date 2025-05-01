@@ -1,110 +1,74 @@
-/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Libre+Baskerville&display=swap');
+
 body {
-    background-color: #1a1a1a;
-    background-image: url('path_to_stone_texture.jpg'); /* Dark stone wall texture */
-    background-size: cover;
-    background-attachment: fixed;
-    color: #e8e6e3;
-    font-family: 'Garamond', serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', serif;
+  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  background-color: #1b1b1b;
+  color: #eae0d5;
 }
 
-/* Header */
 header {
-    background-color: #3a003a;
-    color: #f8f6f2;
-    text-align: center;
-    padding: 30px 20px 10px;
-    border-bottom: 4px solid #2a002a;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+  background-color: #2d1f24;
+  padding: 2em;
+  text-align: center;
+  border-bottom: 2px solid #4d3b3b;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
 }
 
-/* Stamp Logo */
-.logo {
-    width: 60px;
-    height: auto;
-    margin: 0 auto 10px;
-    display: block;
-}
-
-/* Gothic Heading */
 header h1 {
-    font-size: 2.5em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-variant: small-caps;
-    text-shadow: 2px 2px #000;
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+  color: #d2b48c;
+  text-shadow: 1px 1px #000;
 }
 
-/* Container for Content */
-.container {
-    max-width: 960px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(26, 26, 26, 0.85); /* Slight transparency */
-    border: 2px solid #3a003a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+nav {
+  background-color: #302124;
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid #3a2a2e;
+  border-bottom: 1px solid #3a2a2e;
 }
 
-/* Links */
+nav a {
+  color: #e0cda9;
+  margin: 0 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+nav a:hover {
+  color: #f5deb3;
+  text-shadow: 0 0 5px #c19a6b;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(40, 30, 35, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+main ul {
+  list-style-type: square;
+  padding: 1em 2em;
+}
+
+main ul li {
+  margin-bottom: 0.75em;
+  font-size: 1.15em;
+}
+
 a {
-    color: #c9a0dc;
-    text-decoration: none;
-    border-bottom: 1px dashed #a872c1;
+  color: #c7a76c;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #f3d1ff;
-    border-bottom: 1px solid #c9a0dc;
-}
-
-/* Buttons */
-button {
-    background-color: #562b77;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #321747;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    font-family: 'Garamond', serif;
-    box-shadow: 0 2px 5px #000;
-}
-
-button:hover {
-    background-color: #7e4aa1;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #111;
-    color: #888;
-    font-size: 0.9em;
-}
-
-/* Decorative Blockquote */
-blockquote {
-    font-style: italic;
-    padding: 15px 20px;
-    margin: 30px 0;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid #6a2e91;
-}
-
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #4b004b;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: #222;
+  color: #ffe4b5;
 }
