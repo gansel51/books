@@ -1,74 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Libre+Baskerville&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Libre Baskerville', serif;
-  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-  background-color: #1b1b1b;
-  color: #eae0d5;
+  background-color: #121212;
+  color: #f5f5dc;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  background-color: #2d1f24;
-  padding: 2em;
-  text-align: center;
-  border-bottom: 2px solid #4d3b3b;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
-}
-
-header h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 3em;
-  color: #d2b48c;
-  text-shadow: 1px 1px #000;
-}
-
-nav {
-  background-color: #302124;
-  text-align: center;
+  background-color: #000;
   padding: 1em;
-  border-top: 1px solid #3a2a2e;
-  border-bottom: 1px solid #3a2a2e;
+  text-align: center;
 }
 
 nav a {
-  color: #e0cda9;
-  margin: 0 1.5em;
+  color: #f5f5dc;
+  margin: 0 1em;
   text-decoration: none;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 nav a:hover {
-  color: #f5deb3;
-  text-shadow: 0 0 5px #c19a6b;
+  color: gold;
 }
 
 main {
   padding: 2em;
   max-width: 800px;
-  margin: auto;
-  background-color: rgba(40, 30, 35, 0.8);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  margin: 0 auto;
+  text-align: center;
 }
 
-main ul {
-  list-style-type: square;
-  padding: 1em 2em;
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  margin-bottom: 1em;
 }
 
-main ul li {
-  margin-bottom: 0.75em;
-  font-size: 1.15em;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-a {
-  color: #c7a76c;
-  text-decoration: none;
+ul li {
+  padding: 0.5em 0;
+  font-size: 1.2em;
 }
 
-a:hover {
-  color: #ffe4b5;
+section.cocktail-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+div.cocktail {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+}
+
+div.cocktail h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: gold;
+}
+
+div.cocktail p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+span.icon {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.8em;
+}
+
+footer {
+  background-color: #000;
+  color: #f5f5dc;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  font-size: 0.8em;
+}
+
+.spirits-category h2, 
+.spirits-category h3 {
+  color: gold;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 1em;
+}
+
+.hero-logo {
+  display: block;
+  max-width: 500px;
+  margin: 1em auto;
+}
+
+.seal-logo {
+  display: block;
+  max-width: 120px;
+  margin: 1em auto;
+}
+
+@media (max-width: 600px) {
+  .hero-logo {
+    max-width: 90%;
+    height: auto;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  nav a {
+    margin: 0.25em 0;
+    font-size: 1em;
+  }
+
+  main {
+    padding: 1em;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
