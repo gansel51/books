@@ -1,74 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Merriweather&display=swap');
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Libre Baskerville', serif;
-  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-  background-color: #1b1b1b;
-  color: #eae0d5;
+  font-family: 'Crimson Text', serif;
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  background-color: #f9f5ec;
+  color: #3e2f1c;
+  line-height: 1.7;
 }
 
 header {
-  background-color: #2d1f24;
-  padding: 2em;
+  background-color: #5a3e36;
+  color: #f5f5dc;
   text-align: center;
-  border-bottom: 2px solid #4d3b3b;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #a67c52;
 }
 
 header h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 3em;
-  color: #d2b48c;
-  text-shadow: 1px 1px #000;
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 nav {
-  background-color: #302124;
+  background-color: #d7c4a3;
   text-align: center;
-  padding: 1em;
-  border-top: 1px solid #3a2a2e;
-  border-bottom: 1px solid #3a2a2e;
+  padding: 1rem;
+  border-bottom: 2px solid #a67c52;
 }
 
 nav a {
-  color: #e0cda9;
-  margin: 0 1.5em;
+  color: #4b3b2a;
   text-decoration: none;
+  margin: 0 1.5rem;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
-  color: #f5deb3;
-  text-shadow: 0 0 5px #c19a6b;
+  text-decoration: underline;
+  color: #6b4e2e;
 }
 
 main {
-  padding: 2em;
   max-width: 800px;
-  margin: auto;
-  background-color: rgba(40, 30, 35, 0.8);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border: 1px solid #c3b091;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
-main ul {
+main h2 {
+  border-bottom: 2px solid #a67c52;
+  padding-bottom: 0.5rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1.75rem;
+}
+
+ul {
   list-style-type: square;
-  padding: 1em 2em;
+  padding-left: 2rem;
 }
 
-main ul li {
-  margin-bottom: 0.75em;
-  font-size: 1.15em;
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 a {
-  color: #c7a76c;
-  text-decoration: none;
+  color: #6b4e2e;
 }
 
 a:hover {
-  color: #ffe4b5;
+  color: #a67c52;
 }
