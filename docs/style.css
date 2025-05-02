@@ -1,141 +1,273 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=swap');
 
+/* Base Styles */
 body {
   margin: 0;
-  background-color: #121212;
-  color: #f5f5dc;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #1a0d00;
+  color: #e8dcc1;
+  font-family: 'Libre Baskerville', 'Times New Roman', serif;
+  line-height: 1.6;
+  background-image: url("https://www.transparenttextures.com/patterns/old-paper.png");
+  background-blend-mode: overlay;
 }
 
+/* Header Styles */
 header {
-  background-color: #000;
-  padding: 1em;
+  background-color: #0a0500;
+  padding: 1.5em 0;
   text-align: center;
-}
-
-nav a {
-  color: #f5f5dc;
-  margin: 0 1em;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
-nav a:hover {
-  color: gold;
-}
-
-main {
-  padding: 2em;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5em;
-  margin-bottom: 1em;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  padding: 0.5em 0;
-  font-size: 1.2em;
-}
-
-section.cocktail-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2em;
-}
-
-div.cocktail {
-  background-color: #1f1f1f;
-  border: 1px solid #333;
-  padding: 1.5em;
-  border-radius: 10px;
-  text-align: left;
+  border-bottom: 4px double #a67c00;
   position: relative;
 }
 
-div.cocktail h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-  color: gold;
-}
-
-div.cocktail p {
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-span.icon {
+header::before {
+  content: "";
   position: absolute;
-  top: 1em;
-  right: 1em;
-  font-size: 1.8em;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #a67c00, transparent);
 }
 
-footer {
-  background-color: #000;
-  color: #f5f5dc;
+header h1 {
+  font-family: 'IM Fell English', 'Playfair Display', serif;
+  font-size: 2.8em;
+  margin: 0.2em 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  color: #d4af37; /* Gold color */
+}
+
+/* Navigation */
+nav {
+  background-color: #0a0500;
+  padding: 0.8em 0;
   text-align: center;
-  padding: 1em;
-  margin-top: 3em;
-  font-size: 0.8em;
+  border-bottom: 1px solid #3d2b12;
 }
 
-.spirits-category h2, 
-.spirits-category h3 {
-  color: gold;
-  font-family: 'Playfair Display', serif;
+nav a {
+  color: #e8dcc1;
+  margin: 0 1.2em;
+  text-decoration: none;
+  font-family: 'IM Fell English', serif;
   font-weight: bold;
-  text-decoration: underline;
-  margin-top: 1em;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.hero-logo {
-  display: block;
-  max-width: 500px;
-  margin: 1em auto;
+nav a:hover {
+  color: #d4af37;
 }
 
-.seal-logo {
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: #d4af37;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Main Content Area */
+main {
+  padding: 2.5em;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(10, 5, 0, 0.7);
+  border: 1px solid #3d2b12;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+main::before {
+  content: "❦";
+  font-size: 1.5em;
+  color: #a67c00;
+  position: absolute;
+  top: -0.7em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a0d00;
+  padding: 0 10px;
+}
+
+main::after {
+  content: "❦";
+  font-size: 1.5em;
+  color: #a67c00;
+  position: absolute;
+  bottom: -0.7em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a0d00;
+  padding: 0 10px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'IM Fell English', 'Playfair Display', serif;
+  color: #d4af37;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1.2em;
+  margin-bottom: 0.7em;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: "";
   display: block;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a67c00, transparent);
+  margin: 0.5em auto;
+}
+
+p {
+  margin-bottom: 1.5em;
+  text-align: justify;
+  font-size: 1.05em;
+  line-height: 1.8;
+}
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px dotted #a67c00;
+}
+
+a:hover {
+  color: #f0c95d;
+  border-bottom: 1px solid #f0c95d;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding-left: 1.2em;
+}
+
+ul li {
+  padding: 0.7em 0;
+  font-size: 1.1em;
+  position: relative;
+}
+
+ul li::before {
+  content: "✦";
+  color: #a67c00;
+  position: absolute;
+  left: -1.2em;
+}
+
+/* Book Listing */
+#book-list li {
+  padding: 0.5em 0;
+  border-bottom: 1px dotted #3d2b12;
+}
+
+#book-list li:last-child {
+  border-bottom: none;
+}
+
+/* Logo Styling */
+.logo-container {
+  text-align: center;
+  padding: 1em 0 0;
+}
+
+.stamp-logo {
   max-width: 120px;
-  margin: 1em auto;
+  opacity: 0.9;
+  filter: sepia(30%) brightness(90%);
 }
 
+/* Recommendations Styling */
+main ul strong {
+  color: #d4af37;
+  font-family: 'IM Fell English', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #0a0500;
+  color: #e8dcc1;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 3em;
+  font-size: 0.85em;
+  border-top: 4px double #a67c00;
+  font-family: 'IM Fell English', serif;
+}
+
+/* Media Queries */
 @media (max-width: 600px) {
-  .hero-logo {
-    max-width: 90%;
-    height: auto;
+  header h1 {
+    font-size: 2em;
   }
 
   nav {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    padding: 1em 0;
   }
 
   nav a {
     margin: 0.25em 0;
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   main {
-    padding: 1em;
+    padding: 1.5em;
+  }
+
+  .stamp-logo {
+    max-width: 90px;
   }
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a0d00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d2b12;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a67c00;
+}
+
+/* Container Class */
 .container {
   max-width: 960px;
   margin: 0 auto;
