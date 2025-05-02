@@ -3,8 +3,200 @@
   <head>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Library</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      :root {
+        --primary-color: #5d4037;
+        --secondary-color: #8d6e63;
+        --accent-color: #d7ccc8;
+        --text-color: #3e2723;
+        --background-color: #f5f5f5;
+        --header-font: 'Georgia', serif;
+        --body-font: 'Calibri', 'Arial', sans-serif;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: var(--body-font);
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+      }
+      
+      .stamp-logo {
+        max-width: 120px;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+      
+      .stamp-logo:hover {
+        transform: rotate(5deg);
+      }
+      
+      header {
+        text-align: center;
+        padding: 10px 0 20px;
+      }
+      
+      h1 {
+        font-family: var(--header-font);
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      }
+      
+      nav {
+        background-color: var(--primary-color);
+        padding: 15px 0;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+      
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: color 0.3s;
+        padding: 5px 10px;
+        border-radius: 4px;
+      }
+      
+      nav a:hover {
+        color: var(--accent-color);
+        background-color: rgba(255,255,255,0.1);
+      }
+      
+      .intro {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      }
+      
+      #library-section {
+        background-color: white;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+      }
+      
+      #library-section h2 {
+        font-family: var(--header-font);
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 10px;
+      }
+      
+      .search-container {
+        margin-bottom: 20px;
+      }
+      
+      #search-input {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+      
+      #book-list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+      }
+      
+      #book-list li {
+        background-color: var(--accent-color);
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        align-items: center;
+      }
+      
+      #book-list li:before {
+        content: "\f02d";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-right: 10px;
+        color: var(--primary-color);
+      }
+      
+      #book-list li:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+      
+      .loading {
+        text-align: center;
+        padding: 40px;
+        font-style: italic;
+        color: #777;
+      }
+      
+      .error {
+        color: #d32f2f;
+        text-align: center;
+        padding: 20px;
+        background-color: #ffebee;
+        border-radius: 4px;
+      }
+      
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+        color: #777;
+        font-size: 0.9rem;
+      }
+      
+      @media (max-width: 768px) {
+        #book-list {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        
+        h1 {
+          font-size: 2rem;
+        }
+        
+        nav {
+          text-align: center;
+        }
+        
+        nav a {
+          margin: 0 8px;
+          font-size: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="logo-container">
@@ -16,35 +208,80 @@
     </div>
     <header><h1>Griffin's Library</h1></header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="recommendations.html">Recommendations</a>
-      <a href="library.html">Library</a>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="recommendations.html"><i class="fas fa-star"></i> Recommendations</a>
+      <a href="library.html"><i class="fas fa-book"></i> Library</a>
     </nav>
-    <main>
-      <p>Here is the list of books on my shelves:</p>
-    </main>
-
-    <main>
+    
+    <div class="intro">
+      <p>Welcome to my personal collection of books! Browse through the titles that have shaped my reading journey.</p>
+    </div>
+    
+    <section id="library-section">
+      <h2>My Bookshelf</h2>
+      
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search for a book title..." 
+          aria-label="Search for books"
+        >
+      </div>
+      
       <ul id="book-list">
-        <li>Loading books...</li>
+        <li class="loading">Loading books...</li>
       </ul>
-    </main>
+    </section>
+    
+    <footer>
+      &copy; 2025 Griffin's Library | All rights reserved
+    </footer>
+    
     <script>
+      // Fetch and display books
       fetch("assets/books.json")
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
         .then((data) => {
           const list = document.getElementById("book-list");
           list.innerHTML = "";
+          
+          if (data.length === 0) {
+            list.innerHTML = "<li>No books found in collection.</li>";
+            return;
+          }
+          
           data.forEach((title) => {
             const li = document.createElement("li");
             li.textContent = title;
             list.appendChild(li);
           });
+          
+          // Setup search functionality
+          const searchInput = document.getElementById('search-input');
+          searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const items = list.getElementsByTagName('li');
+            
+            for (let i = 0; i < items.length; i++) {
+              const bookTitle = items[i].textContent.toLowerCase();
+              if (bookTitle.includes(searchTerm)) {
+                items[i].style.display = '';
+              } else {
+                items[i].style.display = 'none';
+              }
+            }
+          });
         })
         .catch((err) => {
           document.getElementById("book-list").innerHTML =
-            "<li>Error loading books.</li>";
-          console.error(err);
+            "<li class='error'><i class='fas fa-exclamation-circle'></i> Error loading books. Please try again later.</li>";
+          console.error('Error loading books:', err);
         });
     </script>
   </body>
