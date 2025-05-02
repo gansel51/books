@@ -3,8 +3,11 @@
 <head>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
-  <title>Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Griffin's Book Nook</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Adding Font Awesome for decorative icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="logo-container">
@@ -16,11 +19,102 @@
     <a href="recommendations.html">Recommendations</a>
     <a href="library.html">Library</a>
   </nav>
+  
   <main>
-    <p>I love to read and am happy to share my favorite books.<br><br> Follow me as the pages turn on</wbr>: 
-        <a href="https://www.goodreads.com/user/show/6138655-griffin-ansel" target="_blank">
-          my Goodreads!
+    <!-- Welcome Banner -->
+    <div class="ornate-welcome">
+      <div class="ornate-corner top-left"></div>
+      <div class="ornate-corner top-right"></div>
+      <h2>Welcome, Distinguished Reader</h2>
+      <p class="welcome-text">Herein lies a humble collection of tomes and manuscripts, carefully curated for the discerning mind. Please peruse at your leisure and indulge in the written word.</p>
+      <div class="ornate-corner bottom-left"></div>
+      <div class="ornate-corner bottom-right"></div>
+    </div>
+    
+    <!-- Featured Book Section -->
+    <section class="featured-book">
+      <h2>Featured Volume</h2>
+      <div class="book-display">
+        <div class="book-frame">
+          <div class="book-image"></div>
+          <h3 class="book-title">The Name of the Wind</h3>
+          <p class="book-author">Patrick Rothfuss</p>
+        </div>
+        <div class="book-notes">
+          <p>"A tale of adventure and magic that captivates from the first page to the last. The prose itself is like music, with rhythm and cadence that elevate the storytelling to an art form."</p>
+          <p class="signature">— Griffin</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Library Stats -->
+    <section class="library-stats">
+      <h2>The Collection</h2>
+      <div class="stats-container">
+        <div class="stat-card">
+          <i class="fas fa-book-open"></i>
+          <span class="stat-number">423</span>
+          <span class="stat-label">Volumes Collected</span>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-bookmark"></i>
+          <span class="stat-number">157</span>
+          <span class="stat-label">Books Completed</span>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-feather"></i>
+          <span class="stat-number">42</span>
+          <span class="stat-label">Beloved Authors</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Reading Quote -->
+    <div class="quote-scroll">
+      <blockquote>
+        "A reader lives a thousand lives before he dies. The man who never reads lives only one."
+        <cite>— George R.R. Martin</cite>
+      </blockquote>
+    </div>
+    
+    <!-- Goodreads Link -->
+    <div class="external-link">
+      <p>Follow me as the pages turn on: 
+        <a href="https://www.goodreads.com/user/show/6138655-griffin-ansel" target="_blank" class="goodreads-link">
+          <i class="fas fa-external-link-alt"></i> my Goodreads!
         </a>
+      </p>
+    </div>
   </main>
+  
+  <footer>
+    <p>© 2025 Griffin's Book Nook | "In books we find another world"</p>
+  </footer>
+
+  <script>
+    // Simple script to animate stats counting up
+    document.addEventListener('DOMContentLoaded', function() {
+      const statNumbers = document.querySelectorAll('.stat-number');
+      
+      statNumbers.forEach(element => {
+        const target = parseInt(element.textContent);
+        let count = 0;
+        const duration = 2000; // ms
+        const frameDuration = 1000/60; // 60fps
+        const totalFrames = Math.round(duration/frameDuration);
+        const increment = target/totalFrames;
+        
+        const timer = setInterval(() => {
+          count += increment;
+          if(count >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+          } else {
+            element.textContent = Math.floor(count);
+          }
+        }, frameDuration);
+      });
+    });
+  </script>
 </body>
 </html>

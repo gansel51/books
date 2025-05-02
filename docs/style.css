@@ -196,9 +196,11 @@ ul li::before {
 }
 
 .stamp-logo {
-  max-width: 120px;
+  max-width: 80px;
   opacity: 0.9;
   filter: sepia(30%) brightness(90%);
+  margin: 0.5em auto;
+  padding: 0.5em;
 }
 
 /* Recommendations Styling */
@@ -273,3 +275,386 @@ footer {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+/* Additional Gothic/Gilded Age Library Styling for Homepage */
+
+/* Ornate Welcome Section */
+.ornate-welcome {
+    position: relative;
+    padding: 2em;
+    margin: 1em 0 2.5em;
+    text-align: center;
+    border: 1px solid #a67c00;
+    background-color: rgba(26, 13, 0, 0.5);
+  }
+  
+  .welcome-text {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.8;
+  }
+  
+  .ornate-corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  }
+  
+  .top-left {
+    top: -15px;
+    left: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M30 30H0V0C16.5685 0 30 13.4315 30 30Z' fill='%23a67c00'/%3E%3C/svg%3E");
+    transform: rotate(270deg);
+  }
+  
+  .top-right {
+    top: -15px;
+    right: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M30 30H0V0C16.5685 0 30 13.4315 30 30Z' fill='%23a67c00'/%3E%3C/svg%3E");
+    transform: rotate(180deg);
+  }
+  
+  .bottom-left {
+    bottom: -15px;
+    left: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M30 30H0V0C16.5685 0 30 13.4315 30 30Z' fill='%23a67c00'/%3E%3C/svg%3E");
+  }
+  
+  .bottom-right {
+    bottom: -15px;
+    right: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M30 30H0V0C16.5685 0 30 13.4315 30 30Z' fill='%23a67c00'/%3E%3C/svg%3E");
+    transform: rotate(90deg);
+  }
+  
+  /* Featured Book */
+  .featured-book {
+    margin: 2.5em 0;
+  }
+  
+  .book-display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+  }
+  
+  .book-frame {
+    flex: 0 0 200px;
+    text-align: center;
+    background-color: #1f1307;
+    padding: 1.5em;
+    border: 1px solid #a67c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .book-frame::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border: 1px dotted #a67c00;
+    pointer-events: none;
+  }
+  
+  .book-image {
+    height: 200px;
+    background-color: #2c1b0b;
+    margin-bottom: 1em;
+  }
+  
+  .book-title {
+    font-family: 'IM Fell English', serif;
+    font-weight: bold;
+    color: #d4af37;
+    margin: 0.5em 0 0.2em;
+  }
+  
+  .book-author {
+    font-style: italic;
+    margin-top: 0;
+    color: #e8dcc1;
+  }
+  
+  .book-notes {
+    flex: 1;
+    min-width: 200px;
+    font-style: italic;
+    background-color: rgba(26, 13, 0, 0.6);
+    padding: 1.5em;
+    border-left: 3px solid #a67c00;
+  }
+  
+  .signature {
+    text-align: right;
+    color: #d4af37;
+  }
+  
+  /* Library Stats */
+  .library-stats {
+    margin: 3em 0;
+  }
+  
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+  }
+  
+  .stat-card {
+    background-color: #1f1307;
+    padding: 1.5em;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+    border: 1px solid #3d2b12;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .stat-card i {
+    color: #d4af37;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'IM Fell English', serif;
+    color: #d4af37;
+  }
+  
+  .stat-label {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #e8dcc1;
+  }
+  
+  /* Quote Scroll */
+  .quote-scroll {
+    margin: 2em auto;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+    padding: 2em 1em;
+  }
+  
+  .quote-scroll::before,
+  .quote-scroll::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80%;
+    background: linear-gradient(90deg, transparent, #a67c00, transparent);
+    left: 10%;
+  }
+  
+  .quote-scroll::before {
+    top: 0;
+  }
+  
+  .quote-scroll::after {
+    bottom: 0;
+  }
+  
+  blockquote {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #e8dcc1;
+  }
+  
+  blockquote cite {
+    display: block;
+    margin-top: 0.7em;
+    font-size: 0.8em;
+    color: #d4af37;
+  }
+  
+  /* Currently Reading */
+  .current-reads {
+    margin: 3em 0;
+  }
+  
+  .open-book {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1f1307;
+    border: 1px solid #a67c00;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .book-page {
+    flex: 1;
+    min-width: 240px;
+    padding: 1.5em;
+    position: relative;
+  }
+  
+  .left-page {
+    background-color: #1a0d00;
+    border-right: 1px solid #3d2b12;
+  }
+  
+  .left-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(26, 13, 0, 0), rgba(10, 5, 0, 0.7));
+  }
+  
+  .right-page {
+    background-color: #1a0d00;
+  }
+  
+  .progress-marker {
+    margin-top: 1.5em;
+    height: 8px;
+    background-color: #0a0500;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #a67c00;
+  }
+  
+  .progress-text {
+    display: block;
+    margin-top: 0.5em;
+    text-align: right;
+    font-size: 0.9em;
+    color: #d4af37;
+  }
+  
+  .reading-notes {
+    font-style: italic;
+    line-height: 1.8;
+  }
+  
+  /* Library Rules */
+  .library-rules {
+    margin: 3em 0;
+  }
+  
+  .rules-parchment {
+    background-color: #1f1307;
+    background-image: url("https://www.transparenttextures.com/patterns/parchment.png");
+    background-blend-mode: overlay;
+    padding: 2em;
+    border: 1px solid #a67c00;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .rules-parchment ol {
+    counter-reset: rule-counter;
+    list-style: none;
+    padding-left: 2em;
+  }
+  
+  .rules-parchment li {
+    counter-increment: rule-counter;
+    position: relative;
+    padding: 0.7em 0;
+    font-family: 'IM Fell English', serif;
+  }
+  
+  .rules-parchment li::before {
+    content: counter(rule-counter) ".";
+    position: absolute;
+    left: -1.5em;
+    color: #d4af37;
+    font-weight: bold;
+  }
+  
+  /* External Link (Goodreads) */
+  .external-link {
+    margin: 2em 0;
+    text-align: center;
+    padding: 1em;
+    border-top: 1px solid #3d2b12;
+    border-bottom: 1px solid #3d2b12;
+  }
+  
+  .goodreads-link {
+    display: inline-block;
+    margin-top: 0.5em;
+    font-family: 'IM Fell English', serif;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    background-color: #1f1307;
+    border: 1px solid #a67c00;
+    transition: all 0.3s ease;
+  }
+  
+  .goodreads-link:hover {
+    background-color: #2c1b0b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fa-external-link-alt {
+    margin-right: 5px;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    .book-display {
+      flex-direction: column;
+    }
+    
+    .book-notes {
+      border-left: none;
+      border-top: 3px solid #a67c00;
+    }
+    
+    .stat-card {
+      min-width: 100px;
+    }
+    
+    .open-book {
+      flex-direction: column;
+    }
+    
+    .left-page {
+      border-right: none;
+      border-bottom: 1px solid #3d2b12;
+    }
+    
+    .left-page::after {
+      display: none;
+    }
+    
+    blockquote {
+      font-size: 1.1em;
+    }
+  }
