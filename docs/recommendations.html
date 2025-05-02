@@ -3,7 +3,9 @@
   <head>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recommendations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,20 +22,196 @@
       <a href="recommendations.html">Recommendations</a>
       <a href="library.html">Library</a>
     </nav>
-    <main>
-      <p>Here are some of my favorite books that I highly recommend:</p>
-      <ul>
-        <li>
-          <strong>The Way of Kings</strong> by Brandon Sanderson (fantasy)
-        </li>
-        <li>
-          <strong>The Three Body Problem</strong> by Cixin Liu (science fiction)
-        </li>
-        <li>
-          <strong>The Orphanmaster's Son</strong> by Adam Johnson (historical
-          fiction)
-        </li>
-      </ul>
-    </main>
+    
+    <section class="quote-scroll">
+      <blockquote>
+        “The more that you read, the more things you will know. The more that you learn, the more places you'll go.”
+        <cite>― Dr. Seuss</cite>
+      </blockquote>
+    </section>
+
+    <div class="container">
+      <main>
+        <div class="ornate-welcome">
+          <div class="ornate-corner top-left"></div>
+          <div class="ornate-corner top-right"></div>
+          <div class="ornate-corner bottom-left"></div>
+          <div class="ornate-corner bottom-right"></div>
+          <p class="welcome-text">Discover extraordinary literary journeys through my carefully curated recommendations. Each book has left an indelible mark on my imagination.</p>
+        </div>
+
+        <section>
+          <h2>Fiction Favorites</h2>
+          <div class="book-recommendations">
+            <div class="recommendation-card">
+              <h3>Fantasy</h3>
+              <ul>
+                <li>
+                  <strong>The Way of Kings</strong> by Brandon Sanderson
+                  <p class="book-description">An epic beginning to the Stormlight Archive series with immersive worldbuilding and complex characters who face moral dilemmas in a war-torn world.</p>
+                </li>
+                <li>
+                  <strong>The Name of the Wind</strong> by Patrick Rothfuss
+                  <p class="book-description">A beautifully written tale of Kvothe, a gifted young man who becomes the most notorious wizard his world has ever seen.</p>
+                </li>
+                <li>
+                  <strong>Jonathan Strange & Mr. Norrell</strong> by Susanna Clarke
+                  <p class="book-description">A historical fantasy set in 19th-century England with a masterful blend of magic, history, and Regency-era politics.</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="recommendation-card">
+              <h3>Science Fiction</h3>
+              <ul>
+                <li>
+                  <strong>The Three Body Problem</strong> by Cixin Liu
+                  <p class="book-description">A mind-bending exploration of first contact with an alien civilization, interweaving physics, philosophy, and Chinese history.</p>
+                </li>
+                <li>
+                  <strong>Project Hail Mary</strong> by Andy Weir
+                  <p class="book-description">An astronaut wakes up alone on a spacecraft with no memory, tasked with saving humanity from extinction.</p>
+                </li>
+                <li>
+                  <strong>Hyperion</strong> by Dan Simmons
+                  <p class="book-description">A Canterbury Tales-style narrative following seven pilgrims on a journey to the mysterious Time Tombs and the enigmatic Shrike.</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="recommendation-card">
+              <h3>Historical Fiction</h3>
+              <ul>
+                <li>
+                  <strong>The Orphanmaster's Son</strong> by Adam Johnson
+                  <p class="book-description">A Pulitzer Prize-winning novel set in North Korea that explores themes of propaganda, identity, and survival under totalitarianism.</p>
+                </li>
+                <li>
+                  <strong>Wolf Hall</strong> by Hilary Mantel
+                  <p class="book-description">A richly detailed reimagining of Thomas Cromwell's rise to power in the court of Henry VIII.</p>
+                </li>
+                <li>
+                  <strong>The Thousand Autumns of Jacob de Zoet</strong> by David Mitchell
+                  <p class="book-description">A Dutch clerk's experiences in 18th-century Japan, combining historical accuracy with elements of the supernatural.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Non-Fiction Selections</h2>
+          <div class="book-recommendations">
+            <div class="recommendation-card">
+              <h3>Science & Philosophy</h3>
+              <ul>
+                <li>
+                  <strong>Sapiens: A Brief History of Humankind</strong> by Yuval Noah Harari
+                  <p class="book-description">A thought-provoking examination of the history of our species from the Stone Age to the present.</p>
+                </li>
+                <li>
+                  <strong>Thinking, Fast and Slow</strong> by Daniel Kahneman
+                  <p class="book-description">Nobel Prize winner Kahneman's exploration of the two systems that drive how we think and make decisions.</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="recommendation-card">
+              <h3>Memoirs & Biographies</h3>
+              <ul>
+                <li>
+                  <strong>Educated</strong> by Tara Westover
+                  <p class="book-description">A remarkable memoir about growing up in a survivalist family and the transformative power of education.</p>
+                </li>
+                <li>
+                  <strong>The Glass Castle</strong> by Jeannette Walls
+                  <p class="book-description">A stunning memoir of resilience and redemption, and a revelatory look into a family both deeply dysfunctional and uniquely vibrant.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Seasonal Reading Recommendations</h2>
+          <div class="seasonal-recs">
+            <div class="season">
+              <h3><i class="fas fa-snowflake"></i> Winter Reading</h3>
+              <p>For those cold nights by the fire:</p>
+              <ul>
+                <li><strong>The Bear and the Nightingale</strong> by Katherine Arden</li>
+                <li><strong>The Terror</strong> by Dan Simmons</li>
+              </ul>
+            </div>
+            
+            <div class="season">
+              <h3><i class="fas fa-leaf"></i> Spring Reading</h3>
+              <p>Fresh beginnings and renewal:</p>
+              <ul>
+                <li><strong>The Secret Garden</strong> by Frances Hodgson Burnett</li>
+                <li><strong>Circe</strong> by Madeline Miller</li>
+              </ul>
+            </div>
+            
+            <div class="season">
+              <h3><i class="fas fa-sun"></i> Summer Reading</h3>
+              <p>Perfect for vacation adventures:</p>
+              <ul>
+                <li><strong>The Night Circus</strong> by Erin Morgenstern</li>
+                <li><strong>Where the Crawdads Sing</strong> by Delia Owens</li>
+              </ul>
+            </div>
+            
+            <div class="season">
+              <h3><i class="fas fa-ghost"></i> Autumn Reading</h3>
+              <p>As the shadows lengthen:</p>
+              <ul>
+                <li><strong>Mexican Gothic</strong> by Silvia Moreno-Garcia</li>
+                <li><strong>The Haunting of Hill House</strong> by Shirley Jackson</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="quote-scroll">
+          <blockquote>
+            "A reader lives a thousand lives before he dies. The man who never reads lives only one."
+            <cite>― George R.R. Martin</cite>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>Reading Challenge Suggestions</h2>
+          <p>Looking to expand your literary horizons? Try these reading challenges:</p>
+          
+          <div class="challenge-list">
+            <div class="challenge">
+              <h3>Around the World Challenge</h3>
+              <p>Read books from authors representing different countries:</p>
+              <ul>
+                <li><strong>Japan</strong>: "Convenience Store Woman" by Sayaka Murata</li>
+                <li><strong>Nigeria</strong>: "Americanah" by Chimamanda Ngozi Adichie</li>
+                <li><strong>Colombia</strong>: "One Hundred Years of Solitude" by Gabriel García Márquez</li>
+              </ul>
+            </div>
+            
+            <div class="challenge">
+              <h3>Literary Time Machine</h3>
+              <p>Read one significant work from each century:</p>
+              <ul>
+                <li><strong>18th Century</strong>: "Robinson Crusoe" by Daniel Defoe</li>
+                <li><strong>19th Century</strong>: "Jane Eyre" by Charlotte Brontë</li>
+                <li><strong>20th Century</strong>: "To the Lighthouse" by Virginia Woolf</li>
+                <li><strong>21st Century</strong>: "Cloud Atlas" by David Mitchell</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      &copy; 2025 Griffin's Library | All rights reserved
+    </footer>
   </body>
 </html>
