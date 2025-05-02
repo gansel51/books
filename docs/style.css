@@ -657,4 +657,85 @@ footer {
     blockquote {
       font-size: 1.1em;
     }
+
+/* Recommendations Page Styles */
+.book-recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .recommendation-card {
+    flex: 1 1 300px;
+    background-color: rgba(31, 19, 7, 0.7);
+    padding: 1.5rem;
+    border: 1px solid #a67c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .recommendation-card h3 {
+    color: #d4af37;
+    text-align: center;
+    border-bottom: 1px dotted #a67c00;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  
+  .book-description {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem 0;
+    color: #e8dcc1;
+    opacity: 0.9;
+  }
+  
+  .seasonal-recs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .season {
+    flex: 1 1 200px;
+    background-color: rgba(31, 19, 7, 0.7);
+    padding: 1rem;
+    border: 1px solid #a67c00;
+    margin-bottom: 1rem;
+  }
+  
+  .season h3 {
+    color: #d4af37;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .season i {
+    margin-right: 0.5rem;
+  }
+  
+  .challenge-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .challenge {
+    background-color: rgba(31, 19, 7, 0.7);
+    padding: 1.5rem;
+    border-left: 3px solid #a67c00;
+  }
+  
+  .challenge h3 {
+    color: #d4af37;
+    margin-top: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .book-recommendations, 
+    .seasonal-recs {
+      flex-direction: column;
+    }
+  }
   }
